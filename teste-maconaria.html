@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maçonaria Regular no Eixo Mundial</title>
+  <meta name="description" content="Entenda, de forma simples e direta, o que é a Maçonaria Regular no eixo mundial, como funciona o reconhecimento e quais são as referências globais (UGLE e Conferência das Grandes Lojas da América do Norte)." />
+  <meta property="og:title" content="Maçonaria Regular no Eixo Mundial" />
+  <meta property="og:description" content="Site informativo sobre reconhecimento e regularidade maçônica no mundo, com referências oficiais." />
+  <meta property="og:type" content="website" />
+  <meta name="color-scheme" content="light dark" />
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Configurações básicas do Tailwind (fontes do sistema)
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol']
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Fonte Inter opcional (pode remover se preferir só fontes do sistema) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <style>
+    /* Suave destaque de foco para acessibilidade */
+    :focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; }
+    /* Gradiente de fundo discreto */
+    .bg-grid {
+      background-image: radial-gradient(currentColor 1px, transparent 1px);
+      background-size: 18px 18px;
+      opacity: .1;
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-900 selection:bg-indigo-200/60 dark:selection:bg-indigo-400/40">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-900/70 border-b border-slate-200/60 dark:border-slate-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#" class="flex items-center gap-3">
+          <!-- Logotipo simples (Esquadro & Compasso estilizado) -->
+          <svg width="28" height="28" viewBox="0 0 64 64" class="text-indigo-600 dark:text-indigo-400" aria-hidden="true">
+            <path d="M32 6l-6 12h12l-6-12z" fill="currentColor"/>
+            <path d="M16 58l16-28 16 28" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="32" cy="30" r="4" fill="currentColor"/>
+          </svg>
+          <span class="text-sm sm:text-base font-extrabold tracking-tight">Maçonaria Regular no Eixo Mundial</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#sobre" class="hover:text-indigo-600 dark:hover:text-indigo-400">Sobre</a>
+          <a href="#reconhecimento" class="hover:text-indigo-600 dark:hover:text-indigo-400">Reconhecimento</a>
+          <a href="#referencias" class="hover:text-indigo-600 dark:hover:text-indigo-400">Referências</a>
+          <a href="#faq" class="hover:text-indigo-600 dark:hover:text-indigo-400">FAQ</a>
+          <a href="#contato" class="hover:text-indigo-600 dark:hover:text-indigo-400">Contato</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <!-- Botão Modo Escuro -->
+          <button id="themeToggle" class="rounded-xl border border-slate-300 dark:border-slate-700 px-3 py-1.5 text-sm hover:bg-slate-50 dark:hover:bg-slate-800" aria-label="Alternar tema">
+            🌙/☀️
+          </button>
+          <!-- Menu mobile -->
+          <button id="menuBtn" class="md:hidden rounded-xl border border-slate-300 dark:border-slate-700 px-3 py-1.5 text-sm hover:bg-slate-50 dark:hover:bg-slate-800" aria-label="Abrir navegação">
+            Menu
+          </button>
+        </div>
+      </div>
+      <nav id="mobileNav" class="md:hidden hidden pb-4">
+        <ul class="flex flex-col gap-2 text-sm">
+          <li><a class="block rounded-lg px-3 py-2 hover:bg-slate-100 dark:hover:bg-slate-800" href="#sobre">Sobre</a></li>
+          <li><a class="block rounded-lg px-3 py-2 hover:bg-slate-100 dark:hover:bg-slate-800" href="#reconhecimento">Reconhecimento</a></li>
+          <li><a class="block rounded-lg px-3 py-2 hover:bg-slate-100 dark:hover:bg-slate-800" href="#referencias">Referências</a></li>
+          <li><a class="block rounded-lg px-3 py-2 hover:bg-slate-100 dark:hover:bg-slate-800" href="#faq">FAQ</a></li>
+          <li><a class="block rounded-lg px-3 py-2 hover:bg-slate-100 dark:hover:bg-slate-800" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none text-slate-400 dark:text-slate-500 bg-grid"></div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div class="grid items-center gap-10 md:grid-cols-2">
+        <div>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
+            Maçonaria Regular no Mundo:
+            <span class="text-indigo-600 dark:text-indigo-400">tradição, reconhecimento e fraternidade</span>
+          </h1>
+          <p class="mt-5 text-base sm:text-lg text-slate-600 dark:text-slate-300">
+            Entenda, de forma simples e direta, como funcionam a <strong>regularidade</strong> e o
+            <strong>reconhecimento</strong> entre Potências Maçônicas, com referências como a
+            <abbr title="United Grand Lodge of England" class="no-underline">UGLE</abbr> (Grande Loja Unida da Inglaterra)
+            e a Conferência das Grandes Lojas da América do Norte.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#reconhecimento" class="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-4 py-2.5 text-white text-sm font-semibold hover:bg-indigo-700">
+              Como funciona o reconhecimento
+            </a>
+            <a href="#referencias" class="inline-flex items-center justify-center rounded-xl border border-slate-300 dark:border-slate-700 px-4 py-2.5 text-sm font-semibold hover:bg-slate-50 dark:hover:bg-slate-800">
+              Fontes oficiais
+            </a>
+          </div>
+        </div>
+        <!-- Ilustração simples em SVG -->
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-3xl border border-slate-200 dark:border-slate-800 p-1 bg-gradient-to-br from-indigo-50 to-white dark:from-slate-800 dark:to-slate-900">
+            <div class="h-full w-full rounded-2xl grid place-items-center">
+              <svg viewBox="0 0 800 480" class="w-11/12 opacity-90" role="img" aria-label="Mapa estilizado do mundo">
+                <defs>
+                  <linearGradient id="g1" x1="0" x2="1">
+                    <stop offset="0%" stop-color="#4f46e5"/>
+                    <stop offset="100%" stop-color="#22c55e"/>
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" rx="24" fill="url(#g1)" opacity=".08"></rect>
+                <g fill="none" stroke="currentColor" stroke-width="1.2" class="text-slate-400 dark:text-slate-600">
+                  <path d="M40 240h720M400 40v400" opacity=".35"/>
+                  <circle cx="400" cy="240" r="160" opacity=".25"/>
+                </g>
+                <g fill="currentColor" class="text-slate-500 dark:text-slate-300">
+                  <!-- Pedaços simplificados de continentes -->
+                  <path d="M210 140l40 10 18 14-12 12-24-6-22 10-20-10 20-30z"/>
+                  <path d="M330 160l22-8 28 4 12 10-8 12-30 6-20-14z"/>
+                  <path d="M460 150l26-6 36 16-16 18-28-4-18-10z"/>
+                  <path d="M540 210l40 8 24 20-10 14-28-6-24-12-10-12z"/>
+                  <path d="M310 260l30 8 26 16-10 16-22-2-26-14z"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <p class="mt-3 text-xs text-slate-500 dark:text-slate-400">Ilustração meramente representativa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 md:grid-cols-2">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold">O que é <span class="text-indigo-600 dark:text-indigo-400">Maçonaria Regular</span>?</h2>
+          <p class="mt-4 text-slate-600 dark:text-slate-300">
+            “Regularidade” é a conformidade com princípios históricos e usos tradicionais do ofício.
+            As Lojas e Grandes Lojas são consideradas regulares quando derivam de origem legítima e
+            mantêm práticas reconhecidas por Potências regulares ao redor do mundo.
+          </p>
+          <p class="mt-4 text-slate-600 dark:text-slate-300">
+            O reconhecimento é um ato de uma Potência para com outra, confirmando que ambas compartilham
+            princípios e podem manter relações de amizade maçônica.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6">
+          <h3 class="font-bold text-lg">Guia rápido de regularidade (síntese)</h3>
+          <ul class="mt-4 space-y-2 text-sm leading-relaxed list-disc pl-5">
+            <li><strong>Regularidade de origem</strong> — a Grande Loja deve ter sido estabelecida legitimamente por Potência reconhecida ou por três ou mais Lojas regularmente constituídas. (Ver UGLE)</li>
+            <li><strong>Crença no Grande Arquiteto do Universo</strong> como qualificação essencial para ingresso. (Ver UGLE)</li>
+            <li><strong>Volume da Lei Sagrada</strong> aberto durante os trabalhos, junto ao Esquadro e Compasso. (Ver UGLE)</li>
+            <li><strong>Sem discussões de política e religião</strong> no interior da Loja; observância de landmarks, costumes e usos tradicionais. (Ver UGLE)</li>
+          </ul>
+          <p class="mt-4 text-xs text-slate-500 dark:text-slate-400">
+            *Resumido a partir de diretrizes publicadas pela UGLE. Consulte as fontes oficiais na seção “Referências”.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reconhecimento -->
+  <section id="reconhecimento" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-950">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-extrabold">Reconhecimento mundial: como funciona</h2>
+      <p class="mt-4 text-slate-600 dark:text-slate-300">
+        Não existe uma “autoridade única” global. Na prática, duas referências ajudam a
+        compreender o eixo internacional de regularidade e reconhecimento:
+      </p>
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <!-- Card UGLE -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600/10 text-indigo-600 dark:text-indigo-400">UGLE</span>
+            <h3 class="text-lg font-bold">UGLE — Grande Loja Unida da Inglaterra</h3>
+          </div>
+          <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
+            Fundada em 1717, é frequentemente chamada de “Loja-Mãe”. Publica listas de <em>Grand Lodges</em>
+            estrangeiras reconhecidas e estabelece critérios de regularidade amplamente referenciados.
+          </p>
+          <ul class="mt-3 text-sm list-disc pl-5 space-y-1">
+            <li>Mantém <strong>listas de Potências reconhecidas</strong> por região/país.</li>
+            <li>Define parâmetros como <em>regularidade de origem</em>, <em>crença no G.A.D.U.</em>, e presença do <em>Volume da Lei Sagrada</em> nos trabalhos.</li>
+          </ul>
+          <a class="mt-4 inline-flex text-sm font-semibold text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300 underline underline-offset-4"
+             href="https://www.ugle.org.uk/about-us/foreign-grand-lodges" target="_blank" rel="noopener">Ver lista de Grandes Lojas reconhecidas (UGLE) →</a>
+        </article>
+        <!-- Card COGMNA / Comissão -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-600/10 text-emerald-600 dark:text-emerald-400">Américas</span>
+            <h3 class="text-lg font-bold">Conferência das Grandes Lojas da América do Norte</h3>
+          </div>
+          <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
+            O termo “Grande Loja Americana” é usado de forma coloquial; tecnicamente, a referência
+            no eixo norte-americano é a <strong>Conferência dos Grão-Mestres da América do Norte (COGMNA)</strong> e a sua
+            <strong>Comissão de Informação para Reconhecimento</strong>, que reúne e revisa dados para auxiliar as Grandes Lojas na tomada de decisão sobre reconhecimento.
+          </p>
+          <ul class="mt-3 text-sm list-disc pl-5 space-y-1">
+            <li>Relatórios e orientações sobre reconhecimento interestadual e internacional.</li>
+            <li>Ênfase em regularidade, legitimidade e amidade maçônica.</li>
+          </ul>
+          <div class="mt-4 flex flex-col gap-2">
+            <a class="text-sm font-semibold text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-300 underline underline-offset-4"
+               href="https://www.cogmna.info/" target="_blank" rel="noopener">Site oficial da Conferência (COGMNA) →</a>
+            <a class="text-sm font-semibold text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-300 underline underline-offset-4"
+               href="https://masonicrecognition.org/" target="_blank" rel="noopener">Comissão de Informação para Reconhecimento →</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Aviso Legal -->
+      <div class="mt-8 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white dark:bg-slate-900">
+        <h4 class="font-semibold">Aviso importante</h4>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+          O reconhecimento é <strong>ato soberano</strong> de cada Potência Maçônica. Listas e diretrizes podem ser atualizadas.
+          Sempre confirme o status mais recente nas <em>fontes oficiais</em> antes de citar ou publicar.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referências -->
+  <section id="referencias" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-extrabold">Referências oficiais</h2>
+      <p class="mt-4 text-slate-600 dark:text-slate-300">Seleção de links úteis para consulta e validação:</p>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2">
+        <a href="https://www.ugle.org.uk/about-us/foreign-grand-lodges" target="_blank" rel="noopener"
+           class="group rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white dark:bg-slate-900 hover:border-indigo-300 dark:hover:border-indigo-500">
+          <h3 class="font-semibold">UGLE — Foreign Grand Lodges</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Listas de Grandes Lojas reconhecidas pela UGLE.</p>
+          <span class="mt-2 inline-block text-indigo-600 dark:text-indigo-400 text-sm group-hover:underline">Abrir →</span>
+        </a>
+
+        <a href="https://www.ugle.org.uk/sites/default/files/media/file/information-guidance-members-craft-ugle.pdf" target="_blank" rel="noopener"
+           class="group rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white dark:bg-slate-900 hover:border-indigo-300 dark:hover:border-indigo-500">
+          <h3 class="font-semibold">UGLE — Informações e Diretrizes</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Documento com princípios de regularidade (origem, VLS, G.A.D.U., etc.).</p>
+          <span class="mt-2 inline-block text-indigo-600 dark:text-indigo-400 text-sm group-hover:underline">Abrir PDF →</span>
+        </a>
+
+        <a href="https://www.cogmna.info/" target="_blank" rel="noopener"
+           class="group rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white dark:bg-slate-900 hover:border-emerald-300 dark:hover:border-emerald-500">
+          <h3 class="font-semibold">Conferência das Grandes Lojas da América do Norte (COGMNA)</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Informações institucionais e eventos.</p>
+          <span class="mt-2 inline-block text-emerald-600 dark:text-emerald-400 text-sm group-hover:underline">Abrir →</span>
+        </a>
+
+        <a href="https://masonicrecognition.org/" target="_blank" rel="noopener"
+           class="group rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-white dark:bg-slate-900 hover:border-emerald-300 dark:hover:border-emerald-500">
+          <h3 class="font-semibold">Comissão de Informação para Reconhecimento</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Relatórios e orientações sobre reconhecimento.</p>
+          <span class="mt-2 inline-block text-emerald-600 dark:text-emerald-400 text-sm group-hover:underline">Abrir →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-950">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-extrabold">Perguntas frequentes</h2>
+      <div class="mt-6 space-y-3" role="list">
+        <!-- Item -->
+        <details class="group rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 open:shadow">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold">Existe uma “autoridade mundial” única?</span>
+            <span class="ml-3 text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
+            Não. O reconhecimento é descentralizado. A UGLE e a COGMNA/Comissão são referências amplamente utilizadas,
+            mas cada Potência decide soberanamente a quem reconhece.
+          </p>
+        </details>
+
+        <details class="group rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 open:shadow">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold">O que significa “regularidade de origem”?</span>
+            <span class="ml-3 text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
+            Que a Grande Loja foi criada legitimamente por Potência reconhecida ou por três ou mais Lojas regularmente constituídas — um dos pontos clássicos citados pela UGLE.
+          </p>
+        </details>
+
+        <details class="group rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 open:shadow">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold">“Grande Loja Americana” é um órgão único?</span>
+            <span class="ml-3 text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
+            Não. Nos EUA/Canadá há várias Grandes Lojas soberanas (geralmente uma por estado/província). A referência conjunta mais citada é a Conferência dos Grão-Mestres da América do Norte e sua Comissão de Reconhecimento.
+          </p>
+        </details>
+
+        <details class="group rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 open:shadow">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold">Como confirmar se uma Potência é reconhecida?</span>
+            <span class="ml-3 text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
+            Verifique as listas da UGLE e os relatórios/pareceres da Comissão de Reconhecimento.
+            Sempre confirme diretamente com a Potência de origem, pois o status pode mudar.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 sm:py-20">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl border border-slate-200 dark:border-slate-800 p-8 sm:p-10 bg-gradient-to-br from-indigo-50 to-white dark:from-slate-800 dark:to-slate-900">
+        <h2 class="text-2xl sm:text-3xl font-extrabold">Precisa validar uma Potência ou Loja?</h2>
+        <p class="mt-3 text-slate-600 dark:text-slate-300">Use as fontes oficiais para checar reconhecimento e regularidade.</p>
+        <div class="mt-5 flex flex-wrap gap-3">
+          <a href="https://www.ugle.org.uk/about-us/foreign-grand-lodges" target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-4 py-2.5 text-white text-sm font-semibold hover:bg-indigo-700">
+            Consultar UGLE
+          </a>
+          <a href="https://masonicrecognition.org/" target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center rounded-xl border border-emerald-400/50 px-4 py-2.5 text-sm font-semibold text-emerald-700 dark:text-emerald-300 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20">
+            Comissão de Reconhecimento
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-950">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-extrabold">Contato</h2>
+      <p class="mt-4 text-slate-600 dark:text-slate-300">Dúvidas institucionais, parcerias ou sugestões:</p>
+      <form class="mt-6 grid gap-4 sm:grid-cols-2" onsubmit="event.preventDefault(); alert('Mensagem enviada! (exemplo)');">
+        <div class="sm:col-span-1">
+          <label for="nome" class="text-sm font-medium">Nome</label>
+          <input id="nome" type="text" required class="mt-1 w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2" />
+        </div>
+        <div class="sm:col-span-1">
+          <label for="email" class="text-sm font-medium">E-mail</label>
+          <input id="email" type="email" required class="mt-1 w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2" />
+        </div>
+        <div class="sm:col-span-2">
+          <label for="mensagem" class="text-sm font-medium">Mensagem</label>
+          <textarea id="mensagem" rows="4" required class="mt-1 w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2"></textarea>
+        </div>
+        <div class="sm:col-span-2">
+          <button type="submit" class="rounded-xl bg-indigo-600 px-4 py-2.5 text-white text-sm font-semibold hover:bg-indigo-700">
+            Enviar
+          </button>
+        </div>
+      </form>
+      <p class="mt-4 text-xs text-slate-500 dark:text-slate-400">
+        *Este formulário é ilustrativo. Integrações reais (e-mail/API) podem ser adicionadas conforme necessidade.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-slate-200 dark:border-slate-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <p class="text-sm text-slate-500 dark:text-slate-400">
+          © <span id="year"></span> Maçonaria Regular no Eixo Mundial — Conteúdo informativo e educativo.
+        </p>
+        <nav class="text-sm">
+          <a class="hover:underline" href="#sobre">Sobre</a>
+          <span class="mx-2 text-slate-400">•</span>
+          <a class="hover:underline" href="#reconhecimento">Reconhecimento</a>
+          <span class="mx-2 text-slate-400">•</span>
+          <a class="hover:underline" href="#referencias">Referências</a>
+          <span class="mx-2 text-slate-400">•</span>
+          <a class="hover:underline" href="#faq">FAQ</a>
+          <span class="mx-2 text-slate-400">•</span>
+          <a class="hover:underline" href="#contato">Contato</a>
+        </nav>
+      </div>
+      <p class="mt-4 text-xs text-slate-500 dark:text-slate-400">
+        Observação: Este site usa informações públicas de referência (UGLE e COGMNA/Comissão). Estados e países
+        mantêm Potências soberanas; confirme sempre nas fontes oficiais o status de reconhecimento mais recente.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Ano dinâmico
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Menu mobile
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    if (menuBtn) {
+      menuBtn.addEventListener('click', () => {
+        mobileNav.classList.toggle('hidden');
+      });
+    }
+
+    // Modo escuro com persistência
+    const themeToggle = document.getElementById('themeToggle');
+    const docEl = document.documentElement;
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      docEl.classList.add('dark');
+    }
+    themeToggle?.addEventListener('click', () => {
+      docEl.classList.toggle('dark');
+      localStorage.setItem('theme', docEl.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // Scroll suave em âncoras
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({behavior: 'smooth', block: 'start'});
+          // Fecha menu mobile após clique
+          if (!mobileNav.classList.contains('hidden')) mobileNav.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
